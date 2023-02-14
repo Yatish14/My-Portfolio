@@ -57,5 +57,5 @@ function updateHeading()
     {
         k = 0
     }
-    setTimeout(updateHeading,300);
+    setTimeout(updateHeading,200);
 }
