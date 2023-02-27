@@ -48,14 +48,36 @@ function updateHeading()
 {
     l++
     home_heading.innerHTML = `<h1>${heading_h1[k].slice(0,l)}</h1>`;
-    if(l === heading_h1[k].length)
-    {
-        k++
-        l = 0
-    }
-    if(k === heading_h1.length)
-    {
-        k = 0
-    }
+    // if(l === heading_h1[k].length)
+    // {
+    //     k++
+    //     l = 0
+    // }
+    // if(k === heading_h1.length)
+    // {
+    //     k = 0
+    // }
     setTimeout(updateHeading,200);
 }
+
+const home      = document.querySelector(".Home");
+const form      = document.querySelector(".form");
+const times     = document.querySelector(".timesIcon");
+const submit    = document.querySelector(".submitbtn");
+
+contactAnchor.addEventListener("click",()=>
+{
+    home.classList.add("popup");
+    form.classList.remove("popup");
+    document.body.classList.add("disableScroll");
+});
+times.addEventListener("click",()=>
+{
+    home.classList.remove("popup");
+    form.classList.add("popup");
+    document.body.classList.remove("disableScroll");
+});
+submit.addEventListener("click",()=>
+{
+    alert("Message Sent Successfully!");
+});

@@ -43,7 +43,7 @@ html
 }
 .Home
 {
-    background-image: url("https://images.unsplash.com/photo-1560762484-813fc97650a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+    background-image: url("/Images/KeyBoard.jpg");
     background-size: cover;
     height: 100vh;
     box-shadow: 0 3px 5px rgba(0,0,0,.4);
@@ -111,21 +111,95 @@ html
 {
     height: 95vh;
 }
-.Contact
+/* .Contact
 {
     display: flex;
     align-items: center;
-    align-content: center;
     justify-content: center;
-    align-content: center;
     height: 95vh;
-    /* padding: 10px; */
+} */
+.popup.Home
+{
+    filter: blur(5px) brightness(.7);
 }
 .form
 {
-    
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    height: 420px;
+    width : 400px;
+    padding: 0px 20px 0px 20px;
     border-radius: 10px;
-    height: 500px;
-    width : 300px;
-
+    /* background-color: #75162700; */
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 5px rgba(0,0,0,.3);
+}
+.form h2
+{
+    margin-bottom: 20px;
+    font-size: 27px;
+    transform: translateX(32%);
+}
+.form input
+{
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+.submitbtn
+{
+    padding: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: rgb(245, 129, 179);
+    margin-top: 20px;
+}
+.submitbtn:hover
+{
+    filter:brightness(0.9);
+}
+.timesIcon
+{
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    cursor: pointer;
+}
+.timesIcon:hover
+{
+    color: rgb(245, 129, 179);
+}
+.timesIcon .close
+{
+    font-size : 25px;
+}
+.popup.form
+{
+    visibility: hidden;
+}
+.contactIcons
+{
+    display: flex;
+    margin-top: 25px;
+    font-size: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+.linkedin:hover
+{
+    color: rgb(10, 102, 194);
+}
+.instagram:hover
+{
+    color: rgb(228, 64, 95);
+}
+.disableScroll
+{
+    height: 100%;
+    overflow: hidden;
 }

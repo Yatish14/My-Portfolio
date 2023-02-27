@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yatish - Web Developer</title>
     <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!--Navigation Bar-->
@@ -15,7 +17,7 @@
         <a href="#About">About</a>
         <a href="#Education">Education</a>
         <a href="#Skills">Skills</a>
-        <a href="#Contact">Contact</a>
+        <a href="#" id = "contactAnchor">Contact</a>
     </div>
     <!--Home-->
     <div id = "Home" class = "Home">
@@ -46,11 +48,32 @@
     <div id = "Skills" class = "Skills"></div>
 
     <!--Contact-->
-    <div id = "Contact" class = "Contact">
-        <!-- <h1>Contact Me</h1> -->
-        <div class="form">
+    <!-- <div id = "Contact" class = "Contact"> -->
+        <div class="form popup">
+            <h2>Contact Me!</h2>
+            <input type="text" placeholder="Name" class="inputName" required></input>
+            <input type="email" placeholder="Email" class="inputEmail" required></input>
+            <input type="text" placeholder="Message" class="inputMessage" required></input>
+            <input type = "submit" class="submitbtn"></input>
+            <div class="timesIcon">
+                <i class="fa fa-times close" aria-hidden="true"></i>
+            </div>
+            <div class=contactIcons>
+                <a href="https://www.github.com/Yatish14" target="_blank">
+                    <i class="uil uil-github-alt github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/yatish-pandiri-852627259/" target="_blank">
+                    <i class="uil uil-linkedin-alt linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/yatishpandiri/" target="_blank">
+                    <i class="uil uil-instagram instagram"></i>
+                </a>
+                <a href="mailto:yatishpandiri@gmail.com" target="_blank">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+            </div>
         </div>
-    </div>
+    <!-- </div> -->
     <script src="portfolio.js"></script>
 </body>
 </html>
