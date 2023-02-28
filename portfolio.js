@@ -65,19 +65,33 @@ const form      = document.querySelector(".form");
 const times     = document.querySelector(".timesIcon");
 const submit    = document.querySelector(".submitbtn");
 
+const nameInput    = document.querySelector(".inputName");
+const emailInput   = document.querySelector(".inputEmail");
+const messageInput = document.querySelector(".inputMessage");
+
+var contact_Form = document.getElementsByName('contactForm')[0];
+
 contactAnchor.addEventListener("click",()=>
 {
     home.classList.add("popup");
     form.classList.remove("popup");
     document.body.classList.add("disableScroll");
 });
+
 times.addEventListener("click",()=>
 {
     home.classList.remove("popup");
     form.classList.add("popup");
     document.body.classList.remove("disableScroll");
 });
+
 submit.addEventListener("click",()=>
 {
-    alert("Message Sent Successfully!");
+    if(nameInput.value != '' && emailInput.value != '' && messageInput.value != '')
+    {
+        alert("Message Sent Successfully!");
+        contact_Form.submit();
+        contact_Form.reset();
+        return false;
+    }
 });

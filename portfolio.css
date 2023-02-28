@@ -190,6 +190,10 @@ html
     align-items: center;
     justify-content: space-between;
 }
+.github:hover
+{
+    color: black;
+}
 .linkedin:hover
 {
     color: rgb(10, 102, 194);
